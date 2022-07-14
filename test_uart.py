@@ -9,7 +9,9 @@ serial = Serial("/dev/ttymxc2", 115200)
 buf = serial.read(128, 0.5)
 i = 500
 while True:
-    print("read {:d} bytes: _{:s}_".format(len(buf), buf))
+    #print("read {:d} bytes: _{:s}_".format(len(buf), buf))
+    print("read ",buf )
+    print("\n")
     buf = serial.read(128, 0.5)
     i = i-1
     if i == 0:
